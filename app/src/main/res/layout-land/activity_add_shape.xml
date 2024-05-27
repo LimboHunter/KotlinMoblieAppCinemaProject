@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название фигуры:"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название фигуры"
+        android:layout_below="@id/textViewName"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textViewColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цвет фигуры:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/editTextName"/>
+
+    <EditText
+        android:id="@+id/editTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите цвет фигуры"
+        android:layout_below="@id/textViewColor"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textViewSides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество сторон:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/editTextColor"/>
+
+    <EditText
+        android:id="@+id/editTextSides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите количество сторон"
+        android:layout_below="@id/textViewSides"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Площадь фигуры:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/editTextSides"/>
+
+    <EditText
+        android:id="@+id/editTextArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите площадь фигуры"
+        android:layout_below="@id/textViewArea"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить фигуру"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/editTextArea"/>
+</RelativeLayout>
